@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="profile">Profile</string>
+    <string name="statistics">Statistics</string>
+    <string name="courses">Courses</string>
+    <string name="home">Home</string>
+    <string name="login">LOGIN</string>
+    <string name="password_string">Password</string>
+    <string name="email_string">Email</string>
+    <string name="or_connect_with">OR CONNECT WITH</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="have_an_account">Have an account?</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="choose_a_course">Choose a course</string>
+    <string name="about_course">About Course</string>
+    <string name="useful_links">Useful links</string>
+    <string name="exam_tickets">Exam tickets</string>
+    <string name="random_exam_ticket">Random exam ticket</string>
+</resources>
