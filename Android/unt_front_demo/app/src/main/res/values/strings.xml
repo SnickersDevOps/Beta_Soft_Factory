@@ -18,6 +18,10 @@
     <string name="random_exam_ticket">Random exam ticket</string>
     <string name="edit_profile">Edit profile</string>
     <string name="about_developers">About Developers</string>
+    <string name="team_name_snickersdevops">Team Name : SnickersDevOps</string>
+    <string name="team_members">Team members :</string>
+    <string name="adilet_kaskarauov_temirlan_akishev_maksat_maratov_timur_doirashev">Adilet Kaskarauov, Temirlan Akishev, Maksat Maratov, Timur Doirashev</string>
+    <string name="link_to_the_project_code">Link to the project code :</string>
 
 
 </resources>
