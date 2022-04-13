@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.ProfileFragment">
+    tools:context=".fragments.EditProfileFragment">
 
     <TextView
-        android:id="@+id/textView_course_name"
+        android:id="@+id/textView_profile"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginTop="8dp"
@@ -26,7 +26,7 @@
         android:background="@drawable/shadow_header"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_course_name" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_profile" />
 
     <ImageView
         android:id="@+id/img_avatar_profile"
@@ -39,67 +39,67 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2" />
 
-    <TextView
-        android:id="@+id/textView_fname_lname"
+    <Button
+        android:id="@+id/btn_change_avatar_profile"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:text="Fname Lname"
-        android:textColor="@color/black"
-        android:textSize="27sp"
+        android:layout_marginTop="16dp"
+        android:text="Change image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_avatar_profile" />
 
-    <Button
-        android:id="@+id/btn_edit_profile"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    <EditText
+        android:id="@+id/editText_change_fname_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:drawableLeft="@drawable/ic_edit"
-        android:text="@string/edit_profile"
-        android:textAlignment="textStart"
-        android:textSize="23sp"
+        android:hint="Fname Edit"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_fname_lname" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_change_avatar_profile" />
+
+    <EditText
+        android:id="@+id/editText_change_lname_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Lname Edit"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_change_fname_profile" />
+
+    <EditText
+        android:id="@+id/editText_change_password_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_change_lname_profile" />
 
     <Button
-        android:id="@+id/btn_my_courses"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/btn_change_accept_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:drawableLeft="@drawable/ic_courses"
-        android:text="My courses"
-        android:textAlignment="textStart"
-        android:textSize="23sp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:text="Accept"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_edit_profile" />
-
-    <Button
-        android:id="@+id/btn_avout_developers"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:drawableLeft="@drawable/ic_info"
-        android:text="@string/about_developers"
-        android:textAlignment="textStart"
-        android:textSize="23sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_my_courses" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_change_password_profile" />
 
     <View
         android:id="@+id/view"
