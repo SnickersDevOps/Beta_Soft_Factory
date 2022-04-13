@@ -16,4 +16,6 @@
     <string name="useful_links">Useful links</string>
     <string name="exam_tickets">Exam tickets</string>
     <string name="random_exam_ticket">Random exam ticket</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="about_developers">About Developers</string>
 </resources>

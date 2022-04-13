@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigate_unt_app"
-    app:startDestination="@id/welcomeFragment">
+    app:startDestination="@id/profileFragment">
 
 
     <fragment
@@ -31,4 +31,9 @@
         android:name="dts.apps.unt_front_demo.fragments.SignUpFragment"
         android:label="fragment_signup"
         tools:layout="@layout/fragment_signup" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="dts.apps.unt_front_demo.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

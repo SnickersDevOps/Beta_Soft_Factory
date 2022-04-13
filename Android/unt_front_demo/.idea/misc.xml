@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/mrtim/Android_Projects/Soft_factory/unt_front_demo/app/src/main/res/drawable/avatar_demo.xml" value="0.3675" />
         <entry key="..\:/Users/mrtim/Android_Projects/Soft_factory/unt_front_demo/app/src/main/res/drawable/course_demo.xml" value="0.3675" />
         <entry key="..\:/Users/mrtim/Android_Projects/Soft_factory/unt_front_demo/app/src/main/res/drawable/ic.xml" value="0.3675" />
         <entry key="..\:/Users/mrtim/Android_Projects/Soft_factory/unt_front_demo/app/src/main/res/drawable/ic_courses.xml" value="0.3675" />
@@ -15,6 +16,7 @@
         <entry key="..\:/Users/mrtim/Android_Projects/Soft_factory/unt_front_demo/app/src/main/res/layout/fragment_course_info.xml" value="0.275" />
         <entry key="..\:/Users/mrtim/Android_Projects/Soft_factory/unt_front_demo/app/src/main/res/layout/fragment_courses.xml" value="0.33" />
         <entry key="..\:/Users/mrtim/Android_Projects/Soft_factory/unt_front_demo/app/src/main/res/layout/fragment_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mrtim/Android_Projects/Soft_factory/unt_front_demo/app/src/main/res/layout/fragment_profile.xml" value="0.275" />
         <entry key="..\:/Users/mrtim/Android_Projects/Soft_factory/unt_front_demo/app/src/main/res/layout/fragment_signup.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/mrtim/Android_Projects/Soft_factory/unt_front_demo/app/src/main/res/layout/fragment_welcome.xml" value="0.25" />
         <entry key="..\:/Users/mrtim/Android_Projects/Soft_factory/unt_front_demo/app/src/main/res/menu/bottom_nav_bar_main.xml" value="0.36666666666666664" />

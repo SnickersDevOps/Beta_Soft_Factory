@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="white_bg">#FFFFFF</color>
     <color name="demo_bg_color">#B4CAA2</color>
+    <color name="avatar_demo_color">#FF8600</color>
 </resources>

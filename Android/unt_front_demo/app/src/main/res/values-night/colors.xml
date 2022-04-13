@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="demo_bg_color">#B4CAA2</color>
+    <color name="avatar_demo_color">#FF8600</color>
 </resources>
