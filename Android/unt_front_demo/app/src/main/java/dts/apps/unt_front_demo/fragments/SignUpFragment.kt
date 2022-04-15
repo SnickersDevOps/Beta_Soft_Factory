@@ -3,6 +3,7 @@ package dts.apps.unt_front_demo.fragments
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Patterns
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,29 +18,20 @@ class SignUpFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val binding = FragmentSignupBinding.inflate(inflater , container , false)
 
-        binding.editTextEmailSignup.addTextChangedListener(object : TextWatcher {
+        binding.editTextEmailSignup.addTextChangedListener(object : TextWatcher{
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
 
             }
 
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
 
-                if (binding.editTextEmailSignup.text.toString().isEmpty() or binding.editTextPasswordSignup.text.toString().isEmpty()
-                ) {
-                    binding.editTextPasswordSignup.setError("Invalid Password")
-                }
-                else {
-                    if (android.util.Patterns.EMAIL_ADDRESS.matcher(binding.editTextEmailSignup.text.toString()).matches()
-                    ) {
-                        binding.btnSignupSignup.setOnClickListener {
-                            view?.findNavController()
-                                ?.navigate(R.id.action_signUpFragment_to_loginFragment)
-                        }
-                    } else {
-                        binding.editTextEmailSignup.setError("Invalid Email")
+                if (p0.isValidEmail()) {
+                    binding.editTextEmailSignup.error = null
+                    binding.btnSignupSignup.setOnClickListener {
+                        view?.findNavController()?.navigate(R.id.action_signUpFragment_to_loginFragment)
                     }
                 }
-
+                else { binding.editTextEmailSignup.error = "Invalid Email" }
             }
 
             override fun afterTextChanged(p0: Editable?) {
@@ -48,6 +40,10 @@ class SignUpFragment : Fragment() {
         })
 
         return binding.root
+
+    }
+    fun CharSequence?.isValidEmail():Boolean{
+        return !isNullOrEmpty() && Patterns.EMAIL_ADDRESS.matcher(this).matches()
     }
 
-}
+    }
